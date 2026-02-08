@@ -1,26 +1,49 @@
-# eBay Machine Learning Challenge – Named Entity Recognition
+# eBay ML Challenge – Named Entity Recognition (NER)
 
-This project implements a Named Entity Recognition (NER) system using **spaCy**
-to extract structured information from **German eBay product titles**.
+This project implements a Named Entity Recognition (NER) model using spaCy to extract structured information from German e-commerce product titles.
 
-The goal is to identify key entities such as car brand, model, part name,
-and manufacturer from unstructured e-commerce text.
+Example  
+```
+BMW 320d Ölfilter von Mann
+```
 
----
-
-## 🚀 Features
-- Reads product titles from a CSV file
-- Automatically annotates data using rule-based logic
-- Trains a custom German NER model
-- Extracts entities from unseen product titles
-
----
-
-## 🛠️ Tech Stack
-- Python
-- spaCy
-- German language processing (de)
+Output  
+- BMW → CAR_BRAND  
+- 320d → CAR_MODEL  
+- Ölfilter → PART_NAME  
+- Mann → MANUFACTURER  
 
 ---
 
-## 📂 Project Structure
+## Tech Stack
+- Python  
+- spaCy 3.7.2  
+- NLP (German)
+
+---
+
+## Entities
+- CAR_BRAND  
+- CAR_MODEL  
+- PART_NAME  
+- MANUFACTURER  
+
+---
+
+## How to Run
+```
+pip install -r requirements.txt
+python train_ner.py
+python test_german.py
+```
+
+---
+
+## Notes
+- Uses a custom German NER model  
+- Training data is manually annotated  
+
+---
+
+## Author
+Vaishnavi
