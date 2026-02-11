@@ -1,0 +1,13 @@
+
+MODEL_LANG = "de"
+OUTPUT_DIR = "models/ner_model"
+EPOCHS = 30
+BATCH_SIZE = 8
+RANDOM_SEED = 42
+
+LABELS = [
+    "CAR_BRAND",
+    "CAR_MODEL",
+    "PART_NAME",
+    "MANUFACTURER"
+]
